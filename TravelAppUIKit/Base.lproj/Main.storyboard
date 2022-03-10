@@ -322,13 +322,65 @@ your plan.</string>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="sectionIndexBackgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="tZL-h7-dVf">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="100" id="tZL-h7-dVf" customClass="FriendCell" customModule="TravelAppUIKit" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tZL-h7-dVf" id="IgI-w0-4vg">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QTW-p1-b3u">
+                                                    <rect key="frame" x="10" y="10" width="80" height="80"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="80" id="FTO-9G-AZi"/>
+                                                        <constraint firstAttribute="height" constant="80" id="NuS-bg-hnq"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="WyE-Gg-Rhz">
+                                                    <rect key="frame" x="110" y="15.5" width="81" height="69.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Alexander" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TK9-IN-jkI">
+                                                            <rect key="frame" x="0.0" y="0.0" width="81" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Vancouver" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Za0-Uc-osP">
+                                                            <rect key="frame" x="0.0" y="24.5" width="81" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="29" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t7n-Uc-vei">
+                                                            <rect key="frame" x="0.0" y="49" width="81" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m10-Ib-KDR">
+                                                    <rect key="frame" x="346" y="21" width="38" height="29"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="share"/>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="m10-Ib-KDR" firstAttribute="top" secondItem="IgI-w0-4vg" secondAttribute="topMargin" constant="10" id="9Dk-dg-62H"/>
+                                                <constraint firstAttribute="bottom" secondItem="QTW-p1-b3u" secondAttribute="bottom" constant="10" id="FSR-AM-Ey2"/>
+                                                <constraint firstItem="WyE-Gg-Rhz" firstAttribute="leading" secondItem="QTW-p1-b3u" secondAttribute="trailing" constant="20" id="U2Q-TP-nEe"/>
+                                                <constraint firstItem="WyE-Gg-Rhz" firstAttribute="centerY" secondItem="IgI-w0-4vg" secondAttribute="centerY" id="W4b-HD-CW5"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="m10-Ib-KDR" secondAttribute="trailing" constant="10" id="dKD-Ub-OqT"/>
+                                                <constraint firstItem="QTW-p1-b3u" firstAttribute="leading" secondItem="IgI-w0-4vg" secondAttribute="leading" constant="10" id="fou-FF-5GG"/>
+                                                <constraint firstItem="QTW-p1-b3u" firstAttribute="top" secondItem="IgI-w0-4vg" secondAttribute="top" constant="10" id="sYk-Ac-KSR"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="ageLabel" destination="t7n-Uc-vei" id="XS8-0m-D2F"/>
+                                            <outlet property="avatarView" destination="QTW-p1-b3u" id="gVA-8D-74r"/>
+                                            <outlet property="locationLabel" destination="Za0-Uc-osP" id="psl-h0-2Xp"/>
+                                            <outlet property="nameLabel" destination="TK9-IN-jkI" id="rAA-2M-S96"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -349,7 +401,7 @@ your plan.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UsQ-Vg-Sua" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2225" y="-353"/>
+            <point key="canvasLocation" x="2224.6376811594205" y="-353.57142857142856"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vfJ-fV-euj">
@@ -373,6 +425,7 @@ your plan.</string>
     <resources>
         <image name="logo" width="149" height="115"/>
         <image name="logo2" width="149" height="115"/>
+        <image name="share" width="14" height="15"/>
         <image name="welcomeLogo" width="374" height="244"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
