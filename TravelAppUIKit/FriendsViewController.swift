@@ -29,8 +29,9 @@ class FriendsViewController: UIViewController {
         tableView.reloadData()
     }
     
-    func completionHandler(user: User) {
-        // TODO: update your cell later
+    func completionHandler(user: User, section: Int, row: Int) {
+        data[section].1.remove(at: row)
+        tableView.reloadData()
     }
     
 }
@@ -72,8 +73,8 @@ extension FriendsViewController: UITableViewDelegate {
         
         let userData = data[indexPath.section].1[indexPath.row]
         
-        let action = UIContextualAction(style: .normal, title: "Favourite") { [weak self] (action, view, completionHandler) in
-            self?.completionHandler(user: userData)
+        let action = UIContextualAction(style: .normal, title: "Delete") { [weak self] (action, view, completionHandler) in
+            self?.completionHandler(user: userData, section: indexPath.section, row: indexPath.row)
             completionHandler(true)
         }
         
