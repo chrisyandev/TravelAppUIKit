@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "ElementKit",
+        "repositoryURL": "https://github.com/chrisyandev/ElementKit",
+        "state": {
+          "branch": null,
+          "revision": "6eb1b613c44d4d2b9091da8f8c9144e6fbe4dadf",
+          "version": "1.0.3"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
