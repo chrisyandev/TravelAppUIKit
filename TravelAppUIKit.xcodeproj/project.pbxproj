@@ -20,6 +20,9 @@
 		DB0EB58F27D9E227007031DB /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0EB58E27D9E227007031DB /* DataProvider.swift */; };
 		DB0EB59127D9F4F0007031DB /* FriendsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0EB59027D9F4F0007031DB /* FriendsDetailViewController.swift */; };
 		DB0EB59327DB35D5007031DB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0EB59227DB35D5007031DB /* HomeViewController.swift */; };
+		DB27750E27ECFD4B004B64E8 /* TestNetworkingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB27750D27ECFD4B004B64E8 /* TestNetworkingViewController.swift */; };
+		DB27751127ECFF75004B64E8 /* Serializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB27751027ECFF75004B64E8 /* Serializer.swift */; };
+		DB27751327ED390C004B64E8 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB27751227ED390C004B64E8 /* Networking.swift */; };
 		DB3234B827DC019E00F07475 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3234B727DC019E00F07475 /* Place.swift */; };
 		DB3234BA27DC03A000F07475 /* PlaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3234B927DC03A000F07475 /* PlaceCell.swift */; };
 		DB57C48627DB506600C45130 /* ElementKit in Frameworks */ = {isa = PBXBuildFile; productRef = DB57C48527DB506600C45130 /* ElementKit */; };
@@ -42,6 +45,9 @@
 		DB0EB58E27D9E227007031DB /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		DB0EB59027D9F4F0007031DB /* FriendsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsDetailViewController.swift; sourceTree = "<group>"; };
 		DB0EB59227DB35D5007031DB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DB27750D27ECFD4B004B64E8 /* TestNetworkingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNetworkingViewController.swift; sourceTree = "<group>"; };
+		DB27751027ECFF75004B64E8 /* Serializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serializer.swift; sourceTree = "<group>"; };
+		DB27751227ED390C004B64E8 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		DB3234B727DC019E00F07475 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		DB3234B927DC03A000F07475 /* PlaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceCell.swift; sourceTree = "<group>"; };
 		DBFEB40727D09F3F00C4F5A9 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +84,7 @@
 		A32D93E227B835D6009EF08A /* TravelAppUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				DB27750F27ECFF64004B64E8 /* Networking */,
 				DB0EB58B27D9D66F007031DB /* Cell */,
 				DB0EB58827D9D5FE007031DB /* Data */,
 				A32D93E327B835D6009EF08A /* AppDelegate.swift */,
@@ -92,6 +99,7 @@
 				DBFEB40727D09F3F00C4F5A9 /* FriendsViewController.swift */,
 				DB0EB59027D9F4F0007031DB /* FriendsDetailViewController.swift */,
 				DB0EB59227DB35D5007031DB /* HomeViewController.swift */,
+				DB27750D27ECFD4B004B64E8 /* TestNetworkingViewController.swift */,
 			);
 			path = TravelAppUIKit;
 			sourceTree = "<group>";
@@ -113,6 +121,15 @@
 				DB3234B927DC03A000F07475 /* PlaceCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		DB27750F27ECFF64004B64E8 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				DB27751027ECFF75004B64E8 /* Serializer.swift */,
+				DB27751227ED390C004B64E8 /* Networking.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,9 +209,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB27750E27ECFD4B004B64E8 /* TestNetworkingViewController.swift in Sources */,
 				DB3234BA27DC03A000F07475 /* PlaceCell.swift in Sources */,
 				A32D93E827B835D6009EF08A /* ViewController.swift in Sources */,
+				DB27751327ED390C004B64E8 /* Networking.swift in Sources */,
 				A32D93E427B835D6009EF08A /* AppDelegate.swift in Sources */,
+				DB27751127ECFF75004B64E8 /* Serializer.swift in Sources */,
 				A32D93F827B84828009EF08A /* SignupViewController.swift in Sources */,
 				DB3234B827DC019E00F07475 /* Place.swift in Sources */,
 				DB0EB58D27D9D6AD007031DB /* FriendCell.swift in Sources */,
