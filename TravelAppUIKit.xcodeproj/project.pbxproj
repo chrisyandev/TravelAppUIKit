@@ -26,6 +26,8 @@
 		DB3234B827DC019E00F07475 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3234B727DC019E00F07475 /* Place.swift */; };
 		DB3234BA27DC03A000F07475 /* PlaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3234B927DC03A000F07475 /* PlaceCell.swift */; };
 		DB57C48627DB506600C45130 /* ElementKit in Frameworks */ = {isa = PBXBuildFile; productRef = DB57C48527DB506600C45130 /* ElementKit */; };
+		DBDBAFD627FEC1D700304E7D /* ModernNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDBAFD527FEC1D600304E7D /* ModernNetworking.swift */; };
+		DBDBAFD927FEC1F500304E7D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DBDBAFD827FEC1F500304E7D /* Alamofire */; };
 		DBFEB40827D09F3F00C4F5A9 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFEB40727D09F3F00C4F5A9 /* FriendsViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +52,7 @@
 		DB27751227ED390C004B64E8 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		DB3234B727DC019E00F07475 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		DB3234B927DC03A000F07475 /* PlaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceCell.swift; sourceTree = "<group>"; };
+		DBDBAFD527FEC1D600304E7D /* ModernNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernNetworking.swift; sourceTree = "<group>"; };
 		DBFEB40727D09F3F00C4F5A9 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,6 +62,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB57C48627DB506600C45130 /* ElementKit in Frameworks */,
+				DBDBAFD927FEC1F500304E7D /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,6 +132,7 @@
 			children = (
 				DB27751027ECFF75004B64E8 /* Serializer.swift */,
 				DB27751227ED390C004B64E8 /* Networking.swift */,
+				DBDBAFD527FEC1D600304E7D /* ModernNetworking.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -150,6 +155,7 @@
 			name = TravelAppUIKit;
 			packageProductDependencies = (
 				DB57C48527DB506600C45130 /* ElementKit */,
+				DBDBAFD827FEC1F500304E7D /* Alamofire */,
 			);
 			productName = TravelAppUIKit;
 			productReference = A32D93E027B835D6009EF08A /* TravelAppUIKit.app */;
@@ -181,6 +187,7 @@
 			mainGroup = A32D93D727B835D6009EF08A;
 			packageReferences = (
 				DB57C48427DB506600C45130 /* XCRemoteSwiftPackageReference "ElementKit" */,
+				DBDBAFD727FEC1F500304E7D /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = A32D93E127B835D6009EF08A /* Products */;
 			projectDirPath = "";
@@ -223,6 +230,7 @@
 				DB0EB58F27D9E227007031DB /* DataProvider.swift in Sources */,
 				DB0EB59327DB35D5007031DB /* HomeViewController.swift in Sources */,
 				A32D93E627B835D6009EF08A /* SceneDelegate.swift in Sources */,
+				DBDBAFD627FEC1D700304E7D /* ModernNetworking.swift in Sources */,
 				DB0EB58A27D9D613007031DB /* User.swift in Sources */,
 				DB0EB59127D9F4F0007031DB /* FriendsDetailViewController.swift in Sources */,
 			);
@@ -373,7 +381,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = CFA7TXHVWR;
+				DEVELOPMENT_TEAM = LB49FQVNH8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TravelAppUIKit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -386,7 +394,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mostafa-davoodi.TravelAppUIKit";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chris-yan.TravelAppUIKit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -401,7 +409,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = CFA7TXHVWR;
+				DEVELOPMENT_TEAM = LB49FQVNH8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TravelAppUIKit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -414,7 +422,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mostafa-davoodi.TravelAppUIKit";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chris-yan.TravelAppUIKit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -454,6 +462,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		DBDBAFD727FEC1F500304E7D /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -461,6 +477,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DB57C48427DB506600C45130 /* XCRemoteSwiftPackageReference "ElementKit" */;
 			productName = ElementKit;
+		};
+		DBDBAFD827FEC1F500304E7D /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DBDBAFD727FEC1F500304E7D /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
